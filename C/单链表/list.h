@@ -8,16 +8,17 @@ typedef struct ListElmt_
     void *data;
     struct ListElmt_ *next;
 } ListElmt;
-/* Defien a structure for linked lists. */
+/* Define a structure for linked lists. */
 typedef struct List_
 {
     int size;
     int (*match)(const void *key1, const void *key2);
+    /* 析构函数 */
     void (*destroy)(void *data);
     ListElmt *head;
     ListElmt *tail;
 } List;
-/* Public Interface */
+/* Public Interface 公共接口 */
 void list_init(List *list, void (*destroy)(void *data));
 void list_destroy(List *list);
 int list_ins_next(List *list, ListElmt *element, void **data);

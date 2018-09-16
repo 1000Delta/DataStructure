@@ -24,7 +24,7 @@ void list_destroy(List *list) {
     }
 }
 /* list_ins_next */
-int list_ins_next(List *list, ListElmt *element, const void *data) {
+int list_ins_next(List *list, ListElmt *element, const void **data) {
 
     ListElmt *new_element;
     /* Allocate storage for the element. */
@@ -36,17 +36,58 @@ int list_ins_next(List *list, ListElmt *element, const void *data) {
         /* Handle insertion at the head of the list. */
         if (list_size(list) == 0)
             list->tail = new_element;
-            new_element->next = list->head;
-            list->head = new_element;
+        new_element->next = list->head;
+        list->head = new_element;
     }
     else {
         /* Handle insertion somewhere other than at the head. */
         if (element->next == NULL)
-        list->tail = new_element;
+            list->tail = new_element;
         new_element->next = element->next;
         element->next = new_element;
     }
     /* Adjust the size of the list to account for the inserted element. */
     list->size++;
+    return 0;
+}
+/* list_rem_next */
+int list_rem_next(List *list, ListElmt *element, void **data) {
+
+    ListElmt *old_element;
+    /* Do not allow removal from an empty list. */
+    if (list_size(list) == 0) {
+
+        return -1;
+    }
+    if (element == NULL) {
+
+        /* Handle removal from the head of the list. */
+        *data = list->head->data;
+        old_element = list->head;
+        list->head = list->head->next;
+        if (list_size(list) == 1) {
+            
+            list->tail = NULL;
+        }
+    }
+    else {
+
+        /* Handle removal from somewhere of the list. */
+        if (element->next == NULL) {
+
+            return -1;
+        }
+        *data = element->next->data;
+        old_element = element->next;
+        element->next = element->next->next;
+        if (element->next == NULL) {
+
+            list->tail = element;
+        }
+    }
+    /* Free the storage allocated by the abstract datatype. */
+    free(old_element);
+    /* Adjust the size of the list to account for the removed element. */
+    list->size--;
     return 0;
 }
