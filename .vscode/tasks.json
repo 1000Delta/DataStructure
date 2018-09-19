@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "command": "g++",
+    "type": "shell",
+    "args": ["-g","${workspaceRoot}/你的源码文件名.cpp"],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true
+    }
+}
