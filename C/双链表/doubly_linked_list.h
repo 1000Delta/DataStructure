@@ -21,9 +21,9 @@ typedef struct DList_
 void d_list_init(DList *list, void (*destroy)(void *data));
 void d_list_destroy(DList *list);
 /* **data 传入一个指向数据指针的指针, 以便于在外部调用数据指针 */
-int d_list_ins_next(DList *list, DListElmt *element, void **data);
+int d_list_ins_next(DList *list, DListElmt *element, const void *data);
 int d_list_rem_next(DList *list, DListElmt *element, void **data);
-int d_list_ins_previous(DList *list, DListElmt *element, void **data);
+int d_list_ins_previous(DList *list, DListElmt *element, const void *data);
 int d_list_rem_previous(DList *list, DListElmt *element, void **data);
 /* 返回某个元素在表中的位置 */
 int d_list_find(DList *list, DListElmt *element);

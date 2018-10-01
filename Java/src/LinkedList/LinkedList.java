@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedlist;
 
 import java.util.Objects;
 
@@ -36,12 +36,20 @@ public class LinkedList {
         }
     }
 
+    /**
+     * 链表构造函数
+     * 设置初始值
+     */
     public LinkedList() {
 
         this.size = 0;
         this.head = null;
     }
 
+    /**
+     * 链表添加元素
+     * @param data 添加元素的数据
+     */
     public void add(Object data) {
 
         Node newNode = new Node(data);
@@ -56,6 +64,11 @@ public class LinkedList {
         this.size++;
     }
 
+    /**
+     * 在指定结点后插入新结点
+     * @param node 指定结点
+     * @param data 要插入的数据
+     */
     public void insNext(Node node, Object data) {
 
         Node newNode = new Node(data);
@@ -125,21 +138,60 @@ public class LinkedList {
         return data;
     }
 
+    /**
+     * 检测是否为空
+     * @return 判断是否为空的结果
+     */
     public boolean isEmpty() {
 
         return Objects.isNull(this.head);
     };
 
+    /**
+     * 寻找元素在链表中的位置
+     * @param node 要寻找的元素
+     * @return int类型 元素位置
+     */
     public int find(Node node) {
 
         Node currentNode = this.head;
         int i = 0;
-        while (!Objects.isNull(currentNode) && currentNode.equals(node)) {
+        while (!Objects.isNull(currentNode) && !currentNode.equals(node)) {
 
             currentNode = currentNode.next;
             i++;
         }
-        return i;
+        if (Objects.isNull(currentNode)) {
+
+            return -1;
+        } else {
+
+            return i;
+        }
+    }
+
+    /**
+     * 链表反转
+     * @return 反转后链表(原链表)
+     */
+    public LinkedList reverse() {
+
+        Node node1 = this.head;
+        Node node2 = node1.next;
+        Node node3 = node2.next;
+        this.head = this.tail;
+        this.tail = node1;
+        while (true) {
+
+            node2.next = node1;
+            node1 = node2;
+            if (Objects.isNull(node2 = node3)) {
+
+                break;
+            }
+            node3 = node3.next;
+        }
+        return this;
     }
 
     /**

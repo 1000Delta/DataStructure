@@ -25,14 +25,14 @@ void d_list_destroy(DList *list) {
     }
 }
 
-int d_list_ins_next(DList *list, DListElmt *element, void **data) {
+int d_list_ins_next(DList *list, DListElmt *element, const void *data) {
 
     DListElmt *new_element;
     /* 分配内存 */
     if ((new_element = (DListElmt *)malloc(sizeof(DListElmt))) == NULL) {
         return -1;
     }
-    new_element->data = data;
+    new_element->data = (void *)data;
     list->head = new_element;
     if (element == NULL) {
         if (d_list_size(list) == 0)
@@ -53,7 +53,7 @@ int d_list_ins_next(DList *list, DListElmt *element, void **data) {
     list->size++;
     return 0;
 }
-
+/* 用二级指针指来将data指针传出函数 */
 int d_list_rem_next(DList *list, DListElmt *element, void **data)
 {
     DListElmt *old_element;
@@ -63,7 +63,7 @@ int d_list_rem_next(DList *list, DListElmt *element, void **data)
     }
     if(element == NULL) {
 
-        data = list->head->data;
+        *data = list->head->data;
         old_element = list->head;
         list->head = list->head->next;
         if (d_list_size(list) == 1) {
@@ -89,7 +89,7 @@ int d_list_rem_next(DList *list, DListElmt *element, void **data)
     list->size--;
     return 0;
 }
-int d_list_ins_previous(DList *list, DListElmt *element, void **data)
+int d_list_ins_previous(DList *list, DListElmt *element, const void *data)
 {
     DListElmt *new_element;
     if ((new_element = (DListElmt *)malloc(sizeof(DListElmt))) == NULL) {
@@ -117,6 +117,7 @@ int d_list_ins_previous(DList *list, DListElmt *element, void **data)
     list->size++;
     return 0;
 }
+/* 用二级指针指来将data指针传出函数 */
 int d_list_rem_previous(DList *list, DListElmt *element, void **data)
 {
     DListElmt *old_element;

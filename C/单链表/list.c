@@ -24,7 +24,7 @@ void list_destroy(List *list) {
     }
 }
 /* list_ins_next */
-int list_ins_next(List *list, ListElmt *element, const void **data) {
+int list_ins_next(List *list, ListElmt *element, const void *data) {
 
     ListElmt *new_element;
     /* Allocate storage for the element. */

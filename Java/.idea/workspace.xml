@@ -11,33 +11,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedList.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/linkedlist/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="482">
+              <caret line="225" selection-start-line="225" selection-end-line="225" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#LinkedList#0" />
+                <element signature="docComment;class#Node#0;class#LinkedList#0" />
+                <element signature="class#Node#0;class#LinkedList#0" />
+                <element signature="docComment;field#next#0;class#Node#0;class#LinkedList#0" />
+                <element signature="method#Node#0;class#Node#0;class#LinkedList#0" />
+                <element signature="method#getData#0;class#Node#0;class#LinkedList#0" />
+                <element signature="docComment;method#LinkedList#0;class#LinkedList#0" />
+                <element signature="method#LinkedList#0;class#LinkedList#0" />
+                <element signature="docComment;method#add#0;class#LinkedList#0" />
+                <element signature="method#add#0;class#LinkedList#0" />
+                <element signature="docComment;method#insNext#0;class#LinkedList#0" />
+                <element signature="method#insNext#0;class#LinkedList#0" />
+                <element signature="docComment;method#remNext#0;class#LinkedList#0" />
+                <element signature="method#remNext#0;class#LinkedList#0" />
+                <element signature="docComment;method#remNext#1;class#LinkedList#0" />
+                <element signature="method#remNext#1;class#LinkedList#0" />
+                <element signature="docComment;method#isEmpty#0;class#LinkedList#0" />
+                <element signature="method#isEmpty#0;class#LinkedList#0" />
+                <element signature="docComment;method#find#0;class#LinkedList#0" />
+                <element signature="method#find#0;class#LinkedList#0" />
+                <element signature="docComment;method#reverse#0;class#LinkedList#0" />
+                <element signature="method#reverse#0;class#LinkedList#0" />
+                <element signature="docComment;method#getNode#0;class#LinkedList#0" />
+                <element signature="method#getNode#0;class#LinkedList#0" />
+                <element signature="method#getSize#0;class#LinkedList#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LinkedList/DoublyLinkedList.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            <state relative-caret-position="482">
+              <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#testLinkedlist#0;class#Main#0" />
+                <element signature="method#testStack#0;class#Main#0" />
+                <element signature="method#后缀表达式#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stack/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -51,11 +81,18 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitjgnore" />
         <option value="$PROJECT_DIR$/src/LinkedList/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/LinkedList/DoublyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/Stack/Stack.java" />
+        <option value="$PROJECT_DIR$/src/linkedlist/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/stack/Stack.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -69,11 +106,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="66" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="778" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="40" />
+    <option name="y" value="11" />
+    <option name="width" value="897" />
+    <option name="height" value="500" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -81,6 +118,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,17 +131,10 @@
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedList" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -115,7 +146,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,21 +223,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537325921582</updated>
-      <workItem from="1537325930990" duration="21918000" />
+      <workItem from="1537325930990" duration="23021000" />
+      <workItem from="1537503467546" duration="4792000" />
+      <workItem from="1537535209578" duration="1861000" />
+      <workItem from="1537588193847" duration="1593000" />
+      <workItem from="1537929554115" duration="23102000" />
+      <workItem from="1538037810851" duration="14097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21918000" />
+    <option name="totallyTimeSpent" value="68466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="4" />
-      <window_info anchor="bottom" id="Messages" weight="0.32896653" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32896653" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
@@ -214,24 +249,24 @@
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" x="464" y="171" width="833" height="601" id="Run" order="7" type="FLOATING" weight="0.32896653" />
+      <window_info anchor="bottom" x="655" y="326" width="833" height="601" id="Run" order="7" type="FLOATING" weight="0.32896653" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24932976" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1381623" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="6" weight="0.24932976" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.24932976" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.3988355" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" x="805" y="184" width="629" height="490" id="Debug" order="8" type="FLOATING" weight="0.3973799" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,10 +277,183 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#LinkedList#0" />
+            <element signature="docComment;class#Node#0;class#LinkedList#0" />
+            <element signature="class#Node#0;class#LinkedList#0" />
+            <element signature="docComment;field#next#0;class#Node#0;class#LinkedList#0" />
+            <element signature="method#Node#0;class#Node#0;class#LinkedList#0" />
+            <element signature="method#getData#0;class#Node#0;class#LinkedList#0" />
+            <element signature="docComment;method#LinkedList#0;class#LinkedList#0" />
+            <element signature="method#LinkedList#0;class#LinkedList#0" />
+            <element signature="docComment;method#add#0;class#LinkedList#0" />
+            <element signature="method#add#0;class#LinkedList#0" />
+            <element signature="docComment;method#insNext#0;class#LinkedList#0" />
+            <element signature="method#insNext#0;class#LinkedList#0" />
+            <element signature="docComment;method#remNext#0;class#LinkedList#0" />
+            <element signature="method#remNext#0;class#LinkedList#0" />
+            <element signature="docComment;method#remNext#1;class#LinkedList#0" />
+            <element signature="method#remNext#1;class#LinkedList#0" />
+            <element signature="docComment;method#isEmpty#0;class#LinkedList#0" />
+            <element signature="method#isEmpty#0;class#LinkedList#0" />
+            <element signature="docComment;method#find#0;class#LinkedList#0" />
+            <element signature="method#find#0;class#LinkedList#0" />
+            <element signature="docComment;method#reverse#0;class#LinkedList#0" />
+            <element signature="method#reverse#0;class#LinkedList#0" />
+            <element signature="docComment;method#getNode#0;class#LinkedList#0" />
+            <element signature="method#getNode#0;class#LinkedList#0" />
+            <element signature="method#getSize#0;class#LinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stack/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testLinkedlist#0;class#Main#0" />
+            <element signature="method#testStack#0;class#Main#0" />
+            <element signature="method#后缀表达式#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#LinkedList#0" />
+            <element signature="docComment;class#Node#0;class#LinkedList#0" />
+            <element signature="class#Node#0;class#LinkedList#0" />
+            <element signature="docComment;field#next#0;class#Node#0;class#LinkedList#0" />
+            <element signature="method#Node#0;class#Node#0;class#LinkedList#0" />
+            <element signature="method#getData#0;class#Node#0;class#LinkedList#0" />
+            <element signature="docComment;method#LinkedList#0;class#LinkedList#0" />
+            <element signature="method#LinkedList#0;class#LinkedList#0" />
+            <element signature="docComment;method#add#0;class#LinkedList#0" />
+            <element signature="method#add#0;class#LinkedList#0" />
+            <element signature="docComment;method#insNext#0;class#LinkedList#0" />
+            <element signature="method#insNext#0;class#LinkedList#0" />
+            <element signature="docComment;method#remNext#0;class#LinkedList#0" />
+            <element signature="method#remNext#0;class#LinkedList#0" />
+            <element signature="docComment;method#remNext#1;class#LinkedList#0" />
+            <element signature="method#remNext#1;class#LinkedList#0" />
+            <element signature="docComment;method#isEmpty#0;class#LinkedList#0" />
+            <element signature="method#isEmpty#0;class#LinkedList#0" />
+            <element signature="docComment;method#find#0;class#LinkedList#0" />
+            <element signature="method#find#0;class#LinkedList#0" />
+            <element signature="docComment;method#reverse#0;class#LinkedList#0" />
+            <element signature="method#reverse#0;class#LinkedList#0" />
+            <element signature="docComment;method#getNode#0;class#LinkedList#0" />
+            <element signature="method#getNode#0;class#LinkedList#0" />
+            <element signature="method#getSize#0;class#LinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testLinkedlist#0;class#Main#0" />
+            <element signature="method#testStack#0;class#Main#0" />
+            <element signature="method#后缀表达式#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/DoublyLinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testLinkedlist#0;class#Main#0" />
+            <element signature="method#testStack#0;class#Main#0" />
+            <element signature="method#后缀表达式#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/DoublyLinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testLinkedlist#0;class#Main#0" />
+            <element signature="method#testStack#0;class#Main#0" />
+            <element signature="method#后缀表达式#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/DoublyLinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3542">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/DoublyLinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testLinkedlist#0;class#Main#0" />
+            <element signature="method#testStack#0;class#Main#0" />
+            <element signature="method#后缀表达式#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitjgnore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -260,27 +468,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/DoublyLinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="482">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#LinkedList#0" />
+            <element signature="docComment;class#Node#0;class#LinkedList#0" />
+            <element signature="class#Node#0;class#LinkedList#0" />
+            <element signature="docComment;field#next#0;class#Node#0;class#LinkedList#0" />
+            <element signature="method#Node#0;class#Node#0;class#LinkedList#0" />
+            <element signature="method#getData#0;class#Node#0;class#LinkedList#0" />
+            <element signature="docComment;method#LinkedList#0;class#LinkedList#0" />
+            <element signature="method#LinkedList#0;class#LinkedList#0" />
+            <element signature="docComment;method#add#0;class#LinkedList#0" />
+            <element signature="method#add#0;class#LinkedList#0" />
+            <element signature="docComment;method#insNext#0;class#LinkedList#0" />
+            <element signature="method#insNext#0;class#LinkedList#0" />
+            <element signature="docComment;method#remNext#0;class#LinkedList#0" />
+            <element signature="method#remNext#0;class#LinkedList#0" />
+            <element signature="docComment;method#remNext#1;class#LinkedList#0" />
+            <element signature="method#remNext#1;class#LinkedList#0" />
+            <element signature="docComment;method#isEmpty#0;class#LinkedList#0" />
+            <element signature="method#isEmpty#0;class#LinkedList#0" />
+            <element signature="docComment;method#find#0;class#LinkedList#0" />
+            <element signature="method#find#0;class#LinkedList#0" />
+            <element signature="docComment;method#reverse#0;class#LinkedList#0" />
+            <element signature="method#reverse#0;class#LinkedList#0" />
+            <element signature="docComment;method#getNode#0;class#LinkedList#0" />
+            <element signature="method#getNode#0;class#LinkedList#0" />
+            <element signature="method#getSize#0;class#LinkedList#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedList/DoublyLinkedList.java">
+    <entry file="jar://D:/coder/Java/jdk10/lib/src.zip!/java.base/java/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        <state relative-caret-position="123">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+          <folding>
+            <element signature="e#9490#9491#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/stack/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="206">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testLinkedlist#0;class#Main#0" />
+            <element signature="method#testStack#0;class#Main#0" />
+            <element signature="method#后缀表达式#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>

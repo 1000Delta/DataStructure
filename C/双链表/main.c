@@ -4,26 +4,25 @@
 
 void destroy(void * data) {
 
-    free(data);
+    free((int *)data);
 }
 
 int main (void) {
 
     DList* new_list;
     int i;
-    int data;
     DListElmt *element;
 
     d_list_init(new_list, destroy);
 
     puts("请输入数据:");
-    while (scanf("%d", &data) != EOF) {
+    for (int i = 0; i < 10; i++) {
 
         int *tmp = (int *)malloc(sizeof(int));
-        *tmp = data;
-        d_list_ins_previous(new_list, NULL, (void *)tmp);
+        scanf("%d", tmp);
+        d_list_ins_previous(new_list, NULL, tmp);
     }
-    element = new_list->head;
+    element = d_list_head(new_list);
     i = 0;
     while (element != NULL) {
 
