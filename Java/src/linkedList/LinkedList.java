@@ -6,31 +6,31 @@ import java.util.Objects;
  * 单链表
  * @author DX
  */
-public class LinkedList {
+public class LinkedList<T> {
 
     private int size;
-    private Node head, tail;
+    private Node<T> head, tail;
 
     /**
      * 内部节点类
      * data 数据
      * next 后继节点
      */
-    public class Node {
+    public class Node<ST> {
 
-        private Object data;
+        private ST data;
         /**
          * 指向下一个节点对象的引用
          */
-        private Node next;
+        private Node<ST> next;
 
-        private Node (Object data) {
+        private Node (ST data) {
 
             this.data = data;
             next = null;
         }
 
-        public Object getData() {
+        public ST getData() {
 
             return data;
         }
@@ -50,9 +50,9 @@ public class LinkedList {
      * 链表添加元素
      * @param data 添加元素的数据
      */
-    public void add(Object data) {
+    public void add(T data) {
 
-        Node newNode = new Node(data);
+        Node<T> newNode = new Node<>(data);
         if (this.size == 0) {
 
             this.head = newNode;
@@ -69,9 +69,9 @@ public class LinkedList {
      * @param node 指定结点
      * @param data 要插入的数据
      */
-    public void insNext(Node node, Object data) {
+    public void insNext(Node<T>node, T data) {
 
-        Node newNode = new Node(data);
+        Node<T> newNode = new Node<>(data);
         /* 当指定结点为null时设置新结点为头结点 */
         if (Objects.isNull(node)) {
 
@@ -91,26 +91,14 @@ public class LinkedList {
     }
 
     /**
-     * 删除指定结点的后继结点并导出数据
-     * 不能对简单数据类型进行数据导出
-     * @param node 指定结点
-     * @param data 需要导出的数据
-     * @throws IllegalArgumentException 避免删除null
-     */
-    public void remNext(Node node, Object data) throws IllegalArgumentException {
-
-        data = this.remNext(node);
-    }
-
-    /**
      * 适用性强的remNext方法
      * @param node 指定结点
      * @return data 导出数据
      * @throws IllegalArgumentException 避免删除null结点
      */
-    public Object remNext(Node node) throws IllegalArgumentException {
+    public T remNext(Node<T> node) throws IllegalArgumentException {
 
-        Object data;
+        T data;
         // 链表长度检测
         if (this.size == 0) {
 
@@ -130,7 +118,7 @@ public class LinkedList {
             // 尾结点检测
             if (Objects.isNull(node.next)) {
 
-                throw new IllegalArgumentException("Cannot remove the next node of tail node");
+                throw new IllegalArgumentException("Cannot remove the next Node<T> of tail node");
             }
             data = node.next.data;
             node.next = node.next.next;
@@ -145,16 +133,16 @@ public class LinkedList {
     public boolean isEmpty() {
 
         return Objects.isNull(this.head);
-    };
+    }
 
     /**
      * 寻找元素在链表中的位置
      * @param node 要寻找的元素
      * @return int类型 元素位置
      */
-    public int find(Node node) {
+    public int find(Node<T>node) {
 
-        Node currentNode = this.head;
+        Node<T> currentNode = this.head;
         int i = 0;
         while (!Objects.isNull(currentNode) && !currentNode.equals(node)) {
 
@@ -176,9 +164,9 @@ public class LinkedList {
      */
     public LinkedList reverse() {
 
-        Node node1 = this.head;
-        Node node2 = node1.next;
-        Node node3 = node2.next;
+        Node<T> node1 = this.head;
+        Node<T> node2 = node1.next;
+        Node<T> node3 = node2.next;
         this.head = this.tail;
         this.tail = node1;
         while (true) {
@@ -197,11 +185,11 @@ public class LinkedList {
     /**
      * 获取指定位置元素
      * @param index 节点位置索引
-     * @return Node 指定位置的结点
+     * @return Node<T> 指定位置的结点
      */
-    public Node getNode(int index) throws IllegalArgumentException {
+    public Node<T> getNode(int index) throws IllegalArgumentException {
 
-        Node currentNode = this.head;
+        Node<T> currentNode = this.head;
         if (index == -1) {
 
             return this.tail;
