@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedList;
 
 import java.util.Objects;
 
@@ -9,7 +9,7 @@ import java.util.Objects;
 public class LinkedList<T> {
 
     private int size;
-    private Node<T> head, tail;
+    protected Node<T> head, tail;
 
     /**
      * 内部节点类
@@ -22,14 +22,19 @@ public class LinkedList<T> {
         /**
          * 指向下一个节点对象的引用
          */
-        private Node<ST> next;
+        public Node<ST> next;
 
-        private Node (ST data) {
+        public Node (ST data) {
 
             this.data = data;
             next = null;
         }
-
+    
+        public void setData(ST data) {
+        
+            this.data = data;
+        }
+    
         public ST getData() {
 
             return data;
@@ -179,6 +184,7 @@ public class LinkedList<T> {
             }
             node3 = node3.next;
         }
+        
         return this;
     }
 
@@ -209,5 +215,15 @@ public class LinkedList<T> {
     public int getSize() {
 
         return size;
+    }
+    
+    public Node<T> getHead() {
+        
+        return head;
+    }
+    
+    public Node<T> getTail() {
+        
+        return tail;
     }
 }

@@ -7,42 +7,42 @@ import java.util.Objects;
  * 先进后出
  * 采用流接口(fluent interface)模式设计
  */
-public class Stack {
+public class Stack<T> {
 
-    private class Node {
+    private class Node<ST> {
 
-        private Object data;
-        private Node previous;
+        private ST data;
+        private Node<ST> previous;
 
-        private Node(Object data) {
+        private Node(ST data) {
 
             this.data = data;
             this.previous = null;
         }
 
-        private void setData(Object data) {
+        private void setData(ST data) {
 
             this.data = data;
         }
 
-        private Object getData() {
+        private ST getData() {
 
             return data;
         }
 
-        private Node getPrevious() {
+        private Node<ST> getPrevious() {
 
             return previous;
         }
 
-        private void setPrevious(Node previous) {
+        private void setPrevious(Node<ST> previous) {
 
             this.previous = previous;
         }
     }
 
     private int size;
-    private Node top;
+    private Node<T> top;
 
     public Stack() {
 
@@ -50,20 +50,20 @@ public class Stack {
         this.top = null;
     }
 
-    public Stack(Object[] dataList) {
+    public Stack(T[] dataList) {
 
-        for (int i = 0; i < dataList.length; i++) {
-
-            Node newNode = new Node(dataList[i]);
+        for (T i : dataList) {
+    
+            Node<T> newNode = new Node<>(i);
             newNode.setPrevious(this.top);
             this.top = newNode;
             this.size++;
         }
     }
 
-    public Stack push(Object data) {
+    public Stack push(T data) {
 
-        Node newNode = new Node(data);
+        Node<T> newNode = new Node<>(data);
         newNode.setPrevious(this.top);
         this.top = newNode;
         this.size++;
@@ -71,16 +71,16 @@ public class Stack {
         return this;
     }
 
-    public Object pop() {
+    public T pop() {
 
-        Node oldTop = this.top;
+        Node<T> oldTop = this.top;
         this.top = this.top.previous;
         this.size--;
 
         return oldTop.getData();
     }
 
-    public Object view() {
+    public T view() {
 
         if (Objects.isNull(this.top)) {
 
@@ -91,9 +91,9 @@ public class Stack {
 
     public Stack reverse() {
 
-        Node n1 = this.top;
-        Node n2 = n1.getPrevious();
-        Node n3 = n2.getPrevious();
+        Node<T> n1 = this.top;
+        Node<T> n2 = n1.getPrevious();
+        Node<T> n3 = n2.getPrevious();
 
         while (true) {
 

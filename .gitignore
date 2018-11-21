@@ -1,3 +1,4 @@
-/.idea/
-/.vscode/
-/*.exe
+.idea/
+.vscode/
+Java.iml
+*.exe
